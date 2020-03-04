@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './App.scss';
 import List from '../List/List.js';
-import {pageContents, listData} from '../../data/dataStore';
+import { pageContents, listData } from '../../data/dataStore';
 
 class App extends React.Component {
   render() {
@@ -11,10 +11,10 @@ class App extends React.Component {
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
         <List {...listData} />
         {/*<List title={['Things to do ', <sup>soon!</sup>]}> */}
-         {/* <p>I'm planning on doing all these things sooner, rather than later!</p> */ }
+        {/* <p>I'm planning on doing all these things sooner, rather than later!</p> */}
         {/*</List>*/}
       </main>
-    )
+    );
   }
 }
 
