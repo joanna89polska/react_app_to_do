@@ -12,7 +12,7 @@ class Column extends React.Component {
     columnTitle: PropTypes.string,
     title: PropTypes.string,
     icon: PropTypes.string,
-    cards: PropTypes.node,
+    cards: PropTypes.array,
     addCard: PropTypes.func,
   }
 
