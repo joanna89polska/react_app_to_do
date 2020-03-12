@@ -22,6 +22,21 @@ export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
+
+export const subpageContents = {
+  info: {
+    title: 'INFO',
+    image: 'https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?cs=srgb&dl=blank-composition-desk-display-317355.jpg&fm=jpg',
+    subtitle: 'Info',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+  },
+  faq: {
+    title: 'FAQ',
+    image: 'https://images.pexels.com/photos/221164/pexels-photo-221164.jpeg?cs=srgb&dl=black-and-white-business-career-close-up-221164.jpg&fm=jpg',
+    subtitle: 'Frequently Asked Questions',
+    content: 'All you need to know before you start!',
+  },
+};
   
 export const listData = {
   key: 0,
@@ -81,19 +96,19 @@ const lists = [
   {
     id: 'list-1',
     title: '1',
-    description: 'Interesting things I want to check out!',
+    description: 'I need to check it out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   {
     id: 'list-2',
     title: '2',
-    description: 'Things I dont want to do!',
+    description: 'Interesing but it can wait',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   {
     id: 'list-3',
     title: '3',
-    description: 'As at title',
+    description: 'For free time',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 ];
@@ -163,21 +178,6 @@ const initialStoreData = {
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
-};
-  
-export const subpageContents = {
-  info: {
-    title: 'INFORMATIONS',
-    image: 'https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?cs=srgb&dl=blank-composition-desk-display-317355.jpg&fm=jpg',
-    subtitle: 'Info',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  },
-  faq: {
-    title: '',
-    image: 'https://images.pexels.com/photos/221164/pexels-photo-221164.jpeg?cs=srgb&dl=black-and-white-business-career-close-up-221164.jpg&fm=jpg',
-    subtitle: 'Ultimate Question',
-    content: 'Answer to the Ultimate Question of Life, the Universe, and Everything is <span> 42!!</span>',
-  },
 };
   
 export default initialStoreData;
