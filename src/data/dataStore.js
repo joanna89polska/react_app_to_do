@@ -1,6 +1,7 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  listCreatorText: 'Add new list',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -10,34 +11,20 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
-  header: {
-    icon: 'search',
-  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  header: {
+    icon: 'cat',
+  },
 };
-
+  
 export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
-
-export const subpageContents = {
-  info: {
-    title: 'INFORMATIONS',
-    image: '',
-    subtitle: 'Info',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-  },
-  faq: {
-    title: 'FREQUENTLY ASKED QUESTIONS',
-    image: '',
-    subtitle: 'FQA',
-    content: 'Answer to All the Questions here!',
-  },
-};
-
+  
 export const listData = {
+  key: 0,
   title: 'Things to do <sup>soon!</sup>',
   description: 'Interesting things I want to check out!',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
@@ -89,16 +76,28 @@ export const listData = {
     },
   ],
 };
-
+  
 const lists = [
   {
     id: 'list-1',
-    title: 'Things to do <sup>soon!</sup>',
+    title: '1',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: '2',
+    description: 'Things I dont want to do!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: '3',
+    description: 'As at title',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
 ];
-
+  
 const columns = [
   {
     id: 'column-1',
@@ -125,7 +124,7 @@ const columns = [
     icon: 'question',
   },
 ];
-
+  
 const cards = [
   {
     id: 'card-1',
@@ -158,12 +157,27 @@ const cards = [
     title: 'Skyrim',
   },
 ];
-
+  
 const initialStoreData = {
   app: {...pageContents},
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
 };
-
+  
+export const subpageContents = {
+  info: {
+    title: 'INFORMATIONS',
+    image: 'https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?cs=srgb&dl=blank-composition-desk-display-317355.jpg&fm=jpg',
+    subtitle: 'Info',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  },
+  faq: {
+    title: '',
+    image: 'https://images.pexels.com/photos/221164/pexels-photo-221164.jpeg?cs=srgb&dl=black-and-white-business-career-close-up-221164.jpg&fm=jpg',
+    subtitle: 'Ultimate Question',
+    content: 'Answer to the Ultimate Question of Life, the Universe, and Everything is <span> 42!!</span>',
+  },
+};
+  
 export default initialStoreData;
